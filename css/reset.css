@@ -20,6 +20,11 @@ img {
     /* 이미지 넓이값은 필요한 곳에서 width:100% 설정할 것 */
 }
 
+.row {
+    max-width: 1170px; 
+    margin: 0 auto;
+}
+
 
 /*float 때문에 무너진 부모요소 살릴때*/
 .cf:after, .cf:before {
