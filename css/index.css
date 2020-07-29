@@ -54,11 +54,13 @@
 .slide .text a {font-size:17px;
     font-weight: bold;
     color:#fff;
-    background: #cc601f;
+    background: #da7030;
     padding: 10px 50px;
     border-radius: 6px;
     display: inline-block;
 } 
+
+.slide .text a:hover { background: #cc601f;}
 
 .company { padding-bottom: 50px;}
 
@@ -101,6 +103,8 @@
     transform: translate(-50%, -50%);
 }
 
+.company .containerInner:hover div  { opacity: 1;}
+
 .company a:first-child .containerInner {
     background-image: url(../images/con_02_1.jpg);
     float: left;
@@ -134,12 +138,13 @@
 .conBG .text a {
     font-size:17px;
     color:#fff;
-    background: #0b747b;
-    opacity: 0.5;
+    background: rgba(14, 129, 136, 0.5);
     padding: 10px 50px;
     border-radius: 20px;
     display: inline-block;
 }
+
+.conBG .text a:hover { background: #0b747b;}
 
 .studio h2 { padding-top: 60px; padding-bottom: 20px;
     font-size: 30px;
@@ -154,6 +159,13 @@
     padding: 0 15px;
     text-align: center;
 }
+
+.studio .studioInner .item a:hover .overRay:after { background: rgba(0, 0, 0, 0.4);}
+
+.studio .studioInner .item .overRay {position: relative;}
+
+.studio .studioInner .item .overRay:after {content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0;
+background: rgba(0, 0, 0, 0);}
 
 .studio .studioInner .item p {
     margin: 5px 0px 50px 0px;
@@ -181,6 +193,8 @@
     color: #999999;
 }
 
+.studio .button:hover { background: #a3bece; color: #fff;}
+
 .notice { background: #39454b;  padding: 50px 0; margin-top: 40px; font-size: 17px; color: #bbb;}
 .notice .row h3 { color: #ddd; font-size: 18.7px;}
 .notice > .row > div { float:left; width:33.33%; }
@@ -188,6 +202,8 @@
 
 .notice .get .cscenter > p:first-child { padding-bottom: 10px;}
 .notice .network .sns li { display: inline-block; font-size: 30px; padding: 0 5px;}
+.notice .network .sns li:hover { color: #fff;}
+
 
 .ccnumber { text-align: center;}
 .ccnumber h3 {font-size: 22.1px; font-weight: normal; color: #555555; padding-top: 60px;}

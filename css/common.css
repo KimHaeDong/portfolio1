@@ -3,49 +3,17 @@
 /*헤더구역, 푸터구역 등 기타 공통구역에 대한 스타일*/
 
 
-.topmenu {
-    text-align: right;
-    height: 40px;
-    line-height: 40px;
-}
+.topmenu {text-align: right; height: 40px; line-height: 40px;}
+.topmenu a {margin: 0px 10px; font-size: 13.6px; font-family: '나눔고딕'; color: #555555;}
 
-.topmenu a {
-    margin: 0px 10px;
-    font-size: 13.6px;
-    font-family: '나눔고딕';
-    color: #555555;
-}
- 
-.nav_wrap {    
-    border-top: 1px solid #eeeeee;    
-}
+.nav_wrap {border-top: 1px solid #eeeeee;}
 
-.h1Nav {
-    position: relative;
-    height: 90px;
-}
+.h1Nav {position: relative; height: 90px;}
+.h1Nav h1 {line-height: 90px;}
 
-.h1Nav h1 {
-    line-height: 90px;
-}
+.nav {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.nav .depth1 {font-size: 18.7px; color: #333333; }
+.nav .depth1 > li {display: inline-block; position: relative;}
+.nav .depth1 > li > a {display: block; padding: 33px 35px;}
 
-.nav {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.nav .depth1 {
-    font-size: 18.7px;
-    color: #333333;
-}
-
-.nav .depth1 > li {
-    display: inline-block;
-}
-
-.nav .depth1 > li > a {
-    display: block;
-    padding: 20px 35px;
-}
+.nav .depth1 .depth2 { position: absolute; top: 100%; left: 0;z-index: 999;}
