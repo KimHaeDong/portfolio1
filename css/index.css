@@ -141,8 +141,68 @@
     display: inline-block;
 }
 
-.studio h2 { padding-top: 60px; padding-bottom: 10px;
+.studio h2 { padding-top: 60px; padding-bottom: 20px;
     font-size: 30px;
     color: #444444;
     text-align: center;
 }
+
+.studio .studioInner .item {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.studio .studioInner .item p {
+    margin: 5px 0px 50px 0px;
+    color: #666666;
+}
+
+.studio .studioInner .item:nth-child(1),
+.studio .studioInner .item:nth-child(4) {
+    margin-left: 0;
+}
+
+.studio .studioInner img {
+    width: 100%;
+}
+
+.studio .button {
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 1px solid #a3bece;    
+    font-size: 14px;
+    text-align: center;
+    clear: both;
+    border-radius: 20px;
+    color: #999999;
+}
+
+.notice { background: #39454b;  padding: 50px 0; margin-top: 40px; font-size: 17px; color: #bbb;}
+.notice .row h3 { color: #ddd; font-size: 18.7px;}
+.notice > .row > div { float:left; width:33.33%; }
+.notice .row h3 { padding: 5px}
+
+.notice .get .cscenter > p:first-child { padding-bottom: 10px;}
+.notice .network .sns li { display: inline-block; font-size: 30px; padding: 0 5px;}
+
+.ccnumber { text-align: center;}
+.ccnumber h3 {font-size: 22.1px; font-weight: normal; color: #555555; padding-top: 60px;}
+.ccnumber h3 span {font-weight: 600; padding-left: 15px;}
+.ccnumber p { font-size: 15px; color: #666666; padding-top: 10px; padding-bottom: 60px;}
+
+
+
+#footer { text-align:center; font-size: 12.25px; }
+
+
+.comInfo { background:#f7f7f7; color: #666666; padding: 20px 0;}
+.comInfo .sns a { font-size: 17px; padding: 0px 10px 10px; display: inline-block;}
+.comInfo .info span { letter-spacing: -1px; padding-left: 5px;}
+.comInfo .info span:before { content: '|'; padding-right: 7px; font-size: 6px;
+    position: relative; top: -1px;}
+
+.copyright { background:#0a0a0a; font-size: 10.5px; padding: 10px 0px; color: #333;}
