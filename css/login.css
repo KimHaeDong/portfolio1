@@ -16,3 +16,9 @@
     padding:10px }
 #login_page .login_form button { color: #fff;}
 #login_page .login_form .check { padding-top: 10px;}
+
+#login_page .login_form .check input[type=checkbox] {display: none;}
+#login_page .login_form .check label:before { content: '\f14a'; font-family: 'font awesome 5 free';
+    font-weight: 400; color: #ddd; padding-right: 8px; display: inline-block;}
+#login_page .login_form .check input[type=checkbox]:checked + label:before {
+    font-weight: 900; color: #0b747b;}
