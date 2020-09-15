@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+#intContainer {
+    padding-top: 131px;
+}
+
+.comInt {
+    width: 25%;
+    float: left;
+}
+
+.comIntMain {
+    width: 75%;
+    float: right;
+
+}
+
+.intGrid2 img {
+    width: 30%;
+    float: left;
+}
+

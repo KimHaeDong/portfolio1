@@ -2,7 +2,7 @@
 @import "reset.css";
 @import "common.css";
 
-#join_page { padding: 120px 0;}
+#join_page { padding: 231px 0 100px 0;}
 #join_page h2 { text-align: center; font-size: 30px; padding-bottom: 50px;
     border-bottom: 1px solid #666;}
 

@@ -4,7 +4,10 @@
 
 /*헤더구역, 푸터구역 등 기타 공통구역에 대한 스타일*/
 
-
+#header {position: fixed; width:100%; 
+    top:0; left:0; z-index:999999;
+     background:#fff;
+    }
 .topmenu {text-align: right; height: 40px; line-height: 40px;}
 .topmenu a {margin: 0px 10px; font-size: 13.6px; font-family: '나눔고딕'; color: #555555;}
 .topmenu a:hover {color: #ddd; transition:all 0.5s }
@@ -35,4 +38,24 @@
     background:#fff; z-index:9999999 }    
 .loadBox i { font-size:80px; 
     position:absolute; top:40%; left:50%;
-    transform:translate(-50%, -50%) }    
+    transform:translate(-50%, -50%) }
+
+.introAni {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1);
+    z-index: 999999;
+    font-size: 100px;
+    color: #fff;
+}
+
+.introAni i {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%);
+    width: 100%;
+    text-align: center;
+}
