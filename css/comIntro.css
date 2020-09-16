@@ -3,22 +3,155 @@
 @import "common.css";
 
 #intContainer {
-    padding-top: 131px;
+    margin-top: 131px;
+}
+
+.intContainer .introWrap {
+    background-image: url(/images/comIntTop.jpg);
+    background-size: cover;
+    height: 160px;
+    width: 200px;
+    
+}
+
+.introWrap {
+    height: 200px;
 }
 
 .comInt {
     width: 25%;
     float: left;
+    padding: 0 15px;
+}
+
+.comInt .comIntNav h2 {
+    height: 70px;
+    text-align: center;
+    background-color: #5B95C9;
+    color: #fff;
+    font-size: 25px;
+    padding-top: 15px;
+    
+}
+
+.comInt .comIntNav ul li {
+    color: #666;
+    padding: 15px 30px;
+    font-size: 16px;
+    /* display: block; */
+    text-align: center;
+    border: 1px solid #f3f3f3;
+}
+
+.comInt .comIntNav ul li:first-child {
+    margin-top: 5px;
+}
+
+.comInt .comIntNav ul li:first-child:hover {
+    background-color: #f3f3f3;
+}
+
+.comInt .comIntNav ul li:last-child {
+    background-color: #f3f3f3;
+    border-top: none;
+}
+
+.comInt .comIntNav ul li:last-child:hover {
+    background-color: #fff;
+}
+
+.comInt .comIntNav ul li a {
+    display: block;
+}
+
+.comInt .sideBanner {
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.comInt .sideBanner h4 {
+    font-size: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+.comInt .sideBanner p {
+    color: #777;
+    font-size: 13.5px;
+    line-height: 1.5em;
 }
 
 .comIntMain {
     width: 75%;
     float: right;
-
+    padding: 20px;
 }
 
-.intGrid2 img {
-    width: 30%;
+.comIntMain .intHeader h2 {
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.comIntMain .intInner h3 {
+    font-size: 21px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.comIntMain .intInner .intGrid p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7em;
+    padding-bottom: 30px;
+}
+
+.intGrid2 .grid2Img img {
+    width: 50%;
     float: left;
 }
 
+.intGrid2 .grid2Inner {
+    width: 50%;
+    float: right;
+    padding: 30px;
+    line-height: 1.7em;
+}
+
+.intGrid2 .grid2Inner ul {
+    padding: 10px;
+    color: #444;
+}
+
+.intGrid2 .grid2Inner p {
+    color: #666;
+    font-size: 15px;
+}
+
+.intInner .alert {
+    display: inline-block;
+    padding: 15px;
+    margin: 30px 0px 10px 0px;
+    width: 100%;
+}
+
+.intInner .alert strong {
+    font-weight: bold;
+}
+
+.intInner .al1 {
+    border: 1px solid #d6e9c6;
+    background: #dff0d8;
+    border-radius: 4px;
+    color: #3c763d;
+}
+
+.intInner .al2 {
+    border: 1px solid #bce8f1;
+    background: #d9edf7;
+    border-radius: 4px;
+    color: #31708f;
+}
