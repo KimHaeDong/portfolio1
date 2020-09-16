@@ -150,17 +150,12 @@ $(window).scroll(function(){
         var sct = $(this).scrollTop()
         var actNear = $('.company').offset().top - $(this).height()/2
         if (sct >= actNear) {
-            for (var i=0; i<$('.container a').length; i++) {
-                $('.container a').eq(i).css({
-                    animationDelay:i*0.5+'s'
-                }).addClass('animate__fadeInUp')
-            }
+            $('.company .container').addClass('on')
         } else {
-            $('.company .container a').removeClass('animate__fadeInUp')
+            $('.company .container').removeClass('on')
         }
-        
-
 
     })
+
 
 </script>

@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import "reset.css";
-@import "common.css";
+/* @import "reset.css";
+@import "common.css"; */
 
 /*공통구역을 제외한 메인페이지 스타일*/
 
@@ -113,16 +113,14 @@
     color: #116a98;
 }
 
+.company a { display: block; float:left; width:50%; padding: 10px;}
+
 .company .containerInner {
-    width: 46.1%;
     height: 360px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
-
-.company a { display: block;}
-
 
 .company .containerInner div {
     position: absolute;
@@ -138,32 +136,26 @@
 
 .company a:first-child .containerInner {
     background-image: url(../images/con_02_1.jpg);
-    float: left;
 }
 .company a:last-child .containerInner {
     background-image: url(../images/con_02_2.jpg);
-    float: right;
 }
 
 /*ㅡㅡㅡㅡㅡㅡ animate ㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
-.company .container {
-    overflow: hidden;
-}
-
 .company .container a {
-    opacity: 0;
+    overflow:hidden;
+    opacity: 0; 
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
-    
 }
 
-
-.company .container a.animate__fadeInUp {
-    animation-duration: 2s;
-    animation-fill-mode: both;
+.company .container.on a:first-child {
+    animation:fadeInUp 1s both 0s;
 }
-
+.company .container.on a:last-child {
+    animation:fadeInUp 1s both 0.5s;
+}
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
