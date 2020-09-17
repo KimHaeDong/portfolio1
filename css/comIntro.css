@@ -6,16 +6,10 @@
     margin-top: 131px;
 }
 
-.intContainer .introWrap {
-    background-image: url(/images/comIntTop.jpg);
+#introWrap {
+    background: url(../images/comIntTop.jpg) no-repeat;
     background-size: cover;
-    height: 160px;
-    width: 200px;
-    
-}
-
-.introWrap {
-    height: 200px;
+    height: 100px;
 }
 
 .comInt {

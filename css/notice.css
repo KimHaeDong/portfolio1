@@ -1,11 +1,17 @@
 @charset "utf-8";
 
+.noticePage .topImg {
+    background: url(../images/comIntTop.jpg) no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
 input {
     border: 1px solid #ddd;
 }
 
 .noticePage {
-    padding: 136px 0px;
+    padding: 131px 0px;
 }
 
 .noticePage h2 {
