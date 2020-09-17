@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.noticePage .topImg {
+.qnaPage .topImg {
     background: url(../images/coustomerTop.jpg) no-repeat;
     background-size: cover;
     height: 160px;
@@ -10,17 +10,17 @@ input {
     border: 1px solid #ddd;
 }
 
-.noticePage {
+.qnaPage {
     padding: 131px 0px;
 }
 
-.noticePage h2 {
+.qnaPage h2 {
     text-align: center;
     font-size: 25px;
     margin: 50px 0px 20px;
 }
 
-.noticeTable {
+.qnaTable {
     border: 1px solid #ddd;
     padding: 30px;
 }
@@ -56,73 +56,73 @@ input {
     text-overflow: ellipsis; 말줄임표
 } */
 
-.noticeTable{ margin-top: 20px;}
+.qnaTable{ margin-top: 20px;}
 
-.noticeTable col:nth-child(1) {
+.qnaTable col:nth-child(1) {
     width: 5%;
 }
-.noticeTable col:nth-child(2) {
+.qnaTable col:nth-child(2) {
     width: auto;
 }
-.noticeTable col:nth-child(3) {
+.qnaTable col:nth-child(3) {
     width: 13%;
 }
-.noticeTable col:nth-child(4) {
+.qnaTable col:nth-child(4) {
     width: 13%;
 }
-.noticeTable col:nth-child(5) {
+.qnaTable col:nth-child(5) {
     width: 5%;
 }
 
-.noticeTable table {
+.qnaTable table {
     border: none;
     font-size: 14px;
 }
-.noticeTable th,
-.noticeTable td {
+.qnaTable th,
+.qnaTable td {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px 5px;
 }
 
-.noticeTable tbody td:nth-child(1),
-.noticeTable tbody td:nth-child(3),
-.noticeTable tbody td:nth-child(4),
-.noticeTable tbody td:nth-child(5) {
+.qnaTable tbody td:nth-child(1),
+.qnaTable tbody td:nth-child(3),
+.qnaTable tbody td:nth-child(4),
+.qnaTable tbody td:nth-child(5) {
     text-align: center;
 }
-.noticeTable th {
+.qnaTable th {
     background: #adcade;
     border-top: 1px solid #333;
 }
-.noticeTable tbody tr:hover {
+.qnaTable tbody tr:hover {
     background: #adcade;
     color: red;
 }
 
 /* 게시판 페이지번호 */
 
-.noticePage .numlist {
+.qnaPage .numlist {
     text-align: center;
     margin: 20px 0px;
     font-size: 16px;
 }
-.noticePage .numlist span {
+.qnaPage .numlist span {
     background: #ddd;
     padding: 5px 8px;
     display: inline-block;
 }
-.noticePage .numlist a {
+.qnaPage .numlist a {
     display: inline-block;
     padding: 5px 8px;
     border: 1px solid #ddd;
 }
 
-.noticePage .numlist a:hover {
+.qnaPage .numlist a:hover {
     background: #ddd;
 }
 
-.noticePage .numlist a.on {
+.qnaPage .numlist a.on {
     background: #adcade;
 }
 
