@@ -157,8 +157,13 @@
     animation:fadeInUp 1s both 0.5s;
 }
 
-/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡvideo boxㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
+.vidOut {position:fixed; top:0; left:0; bottom: 0; right: 0; background:rgba(0, 0, 0, 0.5); display: none; z-index: 99999999;  }
+.vidInner {position:fixed; top:15%; left:15%; bottom: 15%; right: 15%; }
+.vidClose {position: absolute; top: -50; right: 0; padding: 10px; font-size: 50px; color: #fff;}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 .conBG { background-image: url(../images/con_03_bg.jpg);
     height: 299px;
