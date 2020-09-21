@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+.qnaPage .topImg {
+    background: url(../images/coustomerTop.jpg) no-repeat;
+    background-size: cover;
+    height: 160px;
+}
+
+input {
+    border: 1px solid #ddd;
+}
+
+.qnaPage {
+    padding: 131px 0px;
+}
+
+.comInt {
+    float: left;
+    width: 25%;
+}
+
+.qnaPage h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 10px 30px 10px;
+}
+
+.qnaTable {
+    /* border: 1px solid #ddd; */
+    /* padding: 30px; */
+    float: left;
+    width: 75%;
+}
+
+.sbox {
+    text-align: center;
+}
+
+.sbox select {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.sbox input[type=text] {
+    height: 30px;
+    width: 300px;
+    text-indent: 1em;/*글씨 (1em만큼)들여쓰기*/
+    vertical-align: middle;
+}
+
+.sbox input[type=submit] {
+    height: 30px;
+    background: #ddd;
+    padding: 0 8px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+
+/* .noticeTable td {
+    white-space: nowrap; 내용이 길어질경우 자동줄바꿈이 되지 않게
+    overflow: hidden;
+    text-overflow: ellipsis; 말줄임표
+} */
+
+.qnaTable{ margin-top: 20px;}
+
+.qnaTable col:nth-child(1) {
+    width: 5%;
+}
+.qnaTable col:nth-child(2) {
+    width: auto;
+}
+.qnaTable col:nth-child(3) {
+    width: 13%;
+}
+.qnaTable col:nth-child(4) {
+    width: 13%;
+}
+.qnaTable col:nth-child(5) {
+    width: 8%;
+}
+
+.qnaTable table {
+    border: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.qnaTable th,
+.qnaTable td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+}
+
+.qnaTable tbody td:nth-child(1),
+.qnaTable tbody td:nth-child(3),
+.qnaTable tbody td:nth-child(4),
+.qnaTable tbody td:nth-child(5) {
+    text-align: center;
+}
+.qnaTable th {
+    background: #adcade;
+    border-top: 1px solid #333;
+}
+.qnaTable tbody tr:hover {
+    background: #adcade;
+    color: red;
+}
+
+/* 게시판 페이지번호 */
+
+.qnaPage .numlist {
+    text-align: center;
+    /* margin: 30px; */
+    font-size: 16px;
+}
+.qnaPage .numlist span {
+    background: #ddd;
+    padding: 5px 8px;
+    display: inline-block;
+}
+.qnaPage .numlist a {
+    display: inline-block;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+}
+
+.qnaPage .numlist a:hover {
+    background: #ddd;
+}
+
+.qnaPage .numlist a.on {
+    background: #adcade;
+}
+
+.qnaPage .sbox {
+    padding-top: 30px;
+}
