@@ -63,11 +63,7 @@
             <h2>STUDIO PORTFOLIO</h2>
             <div class="studioInner">
                 <div class="item">
-                    <a href="#" class="fancybox">
-                        <div class="overRay">
-                            <img src="images/con_07_1.jpg" alt="">  
-                        </div>                      
-                    </a>
+                    <a href="#" class="fancybox"><div class="overRay"><img src="images/con_07_1.jpg" alt=""></div></a>
                     <p>Make an order</p>
                 </div>
                 <div class="item">
@@ -154,16 +150,7 @@ prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></
 nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
 })
 
-$(window).scroll(function(){
-        var sct = $(this).scrollTop()
-        var actNear = $('.company').offset().top - $(this).height()/2
-        if (sct >= actNear) {
-            $('.company .container').addClass('on')
-        } else if (sct===0){
-            $('.company .container').removeClass('on')
-        }
 
-    })
 
 $('.vidBox > a').on('click', function(e){
     e.preventDefault()

@@ -157,6 +157,38 @@
     animation:fadeInUp 1s both 0.5s;
 }
 
+
+.studio .studioInner .item {
+    overflow:hidden;
+    opacity: 0; 
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.studio .studioInner.on .item:nth-child(1) {
+    animation: fadeInDown 1s both 0s;
+}
+
+.studio .studioInner.on .item:nth-child(2) {
+    animation: fadeInDown 1s both 0.8s;
+}
+
+.studio .studioInner.on .item:nth-child(3) {
+    animation: fadeInDown 1s both 0.6s;
+}
+
+.studio .studioInner.on .item:nth-child(4) {
+    animation: fadeInDown 1s both 0.4s;
+}
+
+.studio .studioInner.on .item:nth-child(5) {
+    animation: fadeInDown 1s both 0.2s;
+}
+
+.studio .studioInner.on .item:nth-child(6) {
+    animation: fadeInDown 1s both 1s;
+}
+
 /*ㅡㅡㅡㅡㅡㅡㅡvideo boxㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 .vidOut {position:fixed; top:0; left:0; bottom: 0; right: 0; background:rgba(0, 0, 0, 0.5); display: none; z-index: 99999999;  }
