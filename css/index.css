@@ -12,7 +12,42 @@
     background-repeat:no-repeat; height:650px; 
     position:relative; background-position: center; }
 
+/*ㅡㅡㅡㅡㅡㅡslick slide animationㅡㅡㅡㅡㅡㅡㅡ*/
+.slide .slideInner.slick-active {
+    animation: zoomOutMain 5s both;
+}
 
+
+
+@-webkit-keyframes zoomOutMain {
+    from {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+
+  @keyframes zoomOutMain {
+    from {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 .slide .slide1 { 
     background-image:url(../images/main_01.jpg) }
@@ -26,6 +61,7 @@
     transform:translate(-50%, -50%);
     
 }
+
 
 
 .slide .text h2 {font-size:64.6px; 
