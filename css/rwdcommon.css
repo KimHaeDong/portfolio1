@@ -2,12 +2,14 @@
 
 
 @media only screen and (max-width:1350px) {
-    .nav {
+    .h1Nav .nav {
         position: absolute;
         top: 50%;
         right: 5%;
         transform: translateY(-50%);
     }
+
+
 }
 
 @media only screen and (max-width:1166px) {
@@ -22,28 +24,90 @@
         color: #555555;
     }
 
-    .nav {
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        transform: translateY(-50%);
-    }
-        
+
 }
 
 
 
-@media only screen and (max-width:1024px) {
-    .nav {
-        position: absolute;
-        top: 50%;
+@media only screen and (max-width:1070px) {
+
+    .nav .depth1>li>a {
+        display: block;
+        padding: 32px 35px;
+    }
+
+    .h1Nav {
+        height: 150px;
+    }
+
+    .h1Nav h1 img {
+        display: block;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .h1Nav .nav {
+        position: static;
+        top: 65%;
         right: 0%;
         transform: translateY(-50%);
+        text-align: center;
+        margin-top: 25px;
+
     }
-    
-    .nav .depth1 > li > a {display: block; padding: 32px 35px;}
 }
 
 @media only screen and (max-width:767px) {
-    
+
+    .h1Nav {
+        position: relative;
+        height: 90px;
+    }
+
+
+    .h1Nav .nav {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        transform: translateY(0%);
+        text-align: center;
+        margin-top: 25px;
+        /* display: none; */
+        background: #fff;
+    }
+
+    .h1Nav .nav .depth1>li {
+        display: block;
+    }
+
+
+    .h1Nav .nav .depth1>li>a {
+        display: block;
+        padding: 30px;
+    }
+
+
+    .mobile_searchBtn {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        font-size: 20px;
+    }
+
+    .logoNav .open_nav {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    .logoNav .close_nav {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        font-size: 20px;
+    }
 }

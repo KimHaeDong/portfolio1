@@ -1,5 +1,42 @@
 (function($){
 
+    init()
+
+ var flag = true;
+ function init() {
+   var ww = $(window).width()
+   if ( ww>767 && flag ) {
+      $('.h1Nav .nav').show()
+      $('.open_nav, .close_nav, .depth2').hide()
+      flag = false
+   } else if ( ww<=767 && !flag ) {
+      $('.open_nav').show()
+      $('.h1Nav .nav, .depth2').hide()
+      flag = true
+   }
+ }
+
+    // init()
+
+    // function init() {
+    //   var ww = $(window).width()
+    //   if (ww>767) {
+    //       $('html').addClass('pc').removeClass('mobile')
+    //   } else {
+    //       $('html').addClass('mobile').removeClass('pc')
+    //   }
+    // }
+   
+    $(window).resize(function(){
+        init()
+    })
+
+
+
+ $(window).on('resize', function(){
+   init()
+ })
+
     $(window).load(function(){
         $('.introAni').delay(500).fadeOut(500)
     })
@@ -50,4 +87,18 @@
     })
 
 
+    $('.h1Nav .open_nav').on('click', function(){
+        $(this).next().stop().slideDown(300)
+        $(this).hide()
+        $(this).nextAll('.close_nav').css({display:'block'})
+      })
+    
+      // 닫기버튼 클릭시 네비박스 사라지기
+      $('.h1Nav .close_nav').on('click', function(){
+        $(this).prev().stop().slideUp(300)
+        $(this).hide()
+        $(this).prevAll('.open_nav').css({display:'block'})
+        $('.depth2').hide()
+        $('.h1Nav .nav .depth1 > li').removeClass('on')
+      })
 })(jQuery)

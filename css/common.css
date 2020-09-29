@@ -18,6 +18,10 @@
 .h1Nav {position: relative; height: 90px; z-index: 9;}
 .h1Nav h1 {line-height: 90px;}
 
+.mobile_searchBtn { display:none }
+.logoNav .open_nav { display:none } 
+.logoNav .close_nav { display:none }
+
 .nav {position: absolute; top: 50%; right: 18%; 
     transform: translateY(-50%);
 }
