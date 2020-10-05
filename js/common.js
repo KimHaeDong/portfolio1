@@ -1,37 +1,23 @@
 (function($){
 
-    init()
 
+ init()
  var flag = true;
  function init() {
    var ww = $(window).width()
    if ( ww>767 && flag ) {
       $('.h1Nav .nav').show()
+      $('.depth1 > li').removeClass('on')
       $('.open_nav, .close_nav, .depth2').hide()
+      $('html').addClass('pc').removeClass('mobile')
       flag = false
    } else if ( ww<=767 && !flag ) {
       $('.open_nav').show()
       $('.h1Nav .nav, .depth2').hide()
+      $('html').addClass('mobile').removeClass('pc')
       flag = true
    }
  }
-
-    // init()
-
-    // function init() {
-    //   var ww = $(window).width()
-    //   if (ww>767) {
-    //       $('html').addClass('pc').removeClass('mobile')
-    //   } else {
-    //       $('html').addClass('mobile').removeClass('pc')
-    //   }
-    // }
-   
-    $(window).resize(function(){
-        init()
-    })
-
-
 
  $(window).on('resize', function(){
    init()
