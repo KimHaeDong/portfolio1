@@ -316,9 +316,9 @@ background: rgba(0, 0, 0, 0); transition:all 0.5s}
 .studio .button:hover { background: #a3bece; color: #fff; transition:all 0.5s}
 
 .notice { background: #39454b;  padding: 50px 0; margin-top: 40px; font-size: 17px; color: #bbb;}
-.notice .row h3 { color: #ddd; font-size: 18.7px;}
+.notice .row h3 { color: #ddd; font-size: 18.7px; padding: 5px;}
 .notice > .row > div { float:left; width:33.33%; }
-.notice .row h3 { padding: 5px}
+
 
 .notice .get .cscenter > p:first-child { padding-bottom: 10px;}
 .notice .network .sns li { display: inline-block; font-size: 30px; padding: 0 5px;}

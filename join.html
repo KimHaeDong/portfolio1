@@ -106,3 +106,26 @@
             </div>
     </section>
 </div>
+
+<script>
+    (function($){
+    
+        var flagJoin = true
+        initJoin()
+        function initJoin() {
+            if ( $('html').hasClass('mobile') && flagJoin) {
+                $('.gender_area label, .hobby_area label').after('<br>')
+                flagJoin=false
+            } else if ( $('html').hasClass('pc') && !flagJoin) {
+                $('.gender_area, .hobby_area').find('br').remove()
+                flagJoin=true
+            }
+        }
+    
+        $(window).resize(function(){
+            initJoin()
+        })
+    
+    })(jQuery)
+    
+    </script>

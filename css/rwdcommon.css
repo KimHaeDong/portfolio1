@@ -16,6 +16,11 @@
     .row {
         padding: 0 10px;
     }
+    
+    .nav .depth1>li>a {
+        display: block;
+        padding: 10px;
+    }
 
     .topmenu a {
         margin: 0px 5px;
@@ -29,9 +34,9 @@
 
 
 
-@media only screen and (max-width:1070px) {
+@media only screen and (max-width:1024px) {
 
-    .nav .depth1>li>a {
+    .h1Nav .nav .depth1>li>a {
         display: block;
         padding: 20px;
     }
@@ -55,6 +60,8 @@
         margin-top: 25px;
 
     }
+
+    #footer { text-align:center; font-size: 10px; }
 
 
 }
@@ -87,6 +94,7 @@
     .h1Nav .nav .depth1>li>a {
         display: block;
         padding: 30px;
+        border: 1px solid red;
     }
 
 
@@ -98,7 +106,7 @@
         font-size: 20px;
     }
 
-    .logoNav .open_nav {
+    .h1Nav .open_nav {
         display: block;
         position: absolute;
         top: 25px;
@@ -106,11 +114,18 @@
         font-size: 20px;
     }
 
-    .logoNav .close_nav {
+    .h1Nav .close_nav {
         display: none;
         position: absolute;
         top: 25px;
         right: 10px;
         font-size: 20px;
     }
+
+    #footer { text-align:center; font-size: 12.25px; }
+    .comInfo .info span { letter-spacing: -1px; padding: 3px 0px 3px 5px; display: block;}
+    .comInfo .info span:before { content: ''; padding-right: 7px; font-size: 6px;
+        position: relative; top: -1px;}
+
+
 }

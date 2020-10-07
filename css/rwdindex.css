@@ -116,4 +116,12 @@
         border-radius: 20px;
         color: #999999;
     }
+
+    .notice { background: #39454b;  padding: 50px 0; margin-top: 40px; font-size: 10px; color: #bbb;}
+    .notice .row h3 { color: #ddd; font-size: 15px; padding: 5px;}
+    .notice .network .sns li { display: inline-block; font-size: 15px; padding: 0 5px;}
+    .ccnumber h3 {font-size: 15px; font-weight: normal; color: #555555; padding-top: 60px;}
+    .ccnumber h3 span {font-weight: 600; padding-left: 15px;}
+    .ccnumber p { font-size: 13px; color: #666666; padding-top: 10px; padding-bottom: 60px;}
+
 }

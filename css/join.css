@@ -51,3 +51,15 @@ width: 15px; font-weight: bold; font-size: 17px; color: #f00;}
     font-weight: 400; color: #ddd; padding-right: 8px; display: inline-block;}
 .join_form .hobby_area input[type=checkbox]:checked + label:before {
     font-weight: 900; color: #0b747b;}
+
+
+@media screen and (max-width: 767px) {
+    .join_form .w35p {width: 90%;}
+    .join_form .w70p {width: 90%;}
+    .join_form #addr_lbl { width: 120px;}
+    .join_form #addr1 ~ span { display: none;}
+    .join_form .tit_lbl { display: block; width: 100%; line-height: 45px; font-weight: bold; 
+        font-size: 17px; letter-spacing: -2px; padding-left: 20px;}
+    .join_form .info_content { display: block; width: 100%; vertical-align: top;}
+    
+}
