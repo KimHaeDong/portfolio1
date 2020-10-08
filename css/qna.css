@@ -137,3 +137,37 @@ input {
 .qnaPage .sbox {
     padding-top: 30px;
 }
+
+@media only screen and (max-width:1024px) {
+    
+}
+
+
+
+@media only screen and (max-width:767px) {
+
+    .comInt {
+        width: 25%;
+        float: left;
+        padding: 0 15px;
+        display: none;
+    }
+
+
+    .qnaPage .topImg {
+        background: url(../images/coustomerTop.jpg) no-repeat;
+        background-size: cover;
+        height: 100px;
+    }
+
+    .qnaTable {
+        /* border: 1px solid #ddd; */
+        /* padding: 30px; */
+        float: none;
+    
+        width: 100%;
+    }
+
+
+
+}

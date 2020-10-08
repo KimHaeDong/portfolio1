@@ -164,15 +164,17 @@ input {
         height: 100px;
     }
 
-    .noticePage {
-        padding: 130px 0px;
-        
+    .noticeTable {
+        /* border: 1px solid #ddd; */
+        /* padding: 30px; */
+        float: none;
+    
+        width: 100%;
     }
 
     .noticePage .numlist {
         text-align: center;
         font-size: 16px;
-        display: inline-block;
     }
 
     .noticePage .numlist span {
