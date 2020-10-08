@@ -168,7 +168,6 @@ input {
         /* border: 1px solid #ddd; */
         /* padding: 30px; */
         float: none;
-    
         width: 100%;
     }
 
@@ -188,5 +187,15 @@ input {
         border: 1px solid #ddd;
     }
 
+
+}
+
+@media only screen and (max-width:424px) {
+
+    .noticePage .numlist {
+        text-align: center;
+        /* margin: 30px; */
+        font-size: 10px;
+    }
 
 }
