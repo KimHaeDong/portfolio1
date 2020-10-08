@@ -27,6 +27,8 @@
         init()
     })
 
+
+
     // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하기
   $(".depth1 > li").on('click', function(){
       if ( $('html').hasClass('mobile') ) {

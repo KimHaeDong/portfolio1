@@ -149,3 +149,61 @@
     border-radius: 4px;
     color: #31708f;
 }
+
+
+@media only screen and (max-width:1024px) {
+    .comInt {
+        width: 25%;
+        float: left;
+        padding: 0 15px;
+    }
+
+    .comIntMain {
+        width: 75%;
+        float: right;
+        padding: 20px;
+    }
+
+    .intGrid2 .grid2Inner {
+        width: 50%;
+        float: right;
+        padding: 10px;
+        line-height: 1.7em;
+    }
+
+    .intGrid2 .grid2Inner p {
+        color: #666;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width:767px) {
+    .comInt {
+        width: 25%;
+        float: left;
+        padding: 0 15px;
+        display: none;
+    }
+
+    .comIntMain {
+        width: 100%;
+        float: right;
+        padding: 20px;
+    }
+
+    .intGrid2 .grid2Inner {
+        width: 50%;
+        float: right;
+        padding: 5px;
+        line-height: 1.7em;
+    }
+
+    .intGrid2 .grid2Inner p {
+        color: #666;
+        font-size: 13px;
+
+    }
+
+
+}

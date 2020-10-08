@@ -94,8 +94,10 @@
     .h1Nav .nav .depth1>li>a {
         display: block;
         padding: 30px;
-        border: 1px solid red;
     }
+
+    .nav .depth1 .depth2 { position: static; top: 100%; left: 0; width: 100%; 
+        background: #fff; display: none;  }
 
 
     .mobile_searchBtn {

@@ -11,7 +11,7 @@ input {
 }
 
 .noticePage {
-    padding: 131px 0px;
+    padding: 130px 0px;
 }
 
 .comInt {
@@ -136,4 +136,55 @@ input {
 
 .noticePage .sbox {
     padding-top: 30px;
+}
+
+
+@media only screen and (max-width:1024px) {
+    
+}
+
+
+
+@media only screen and (max-width:767px) {
+
+    .comInt {
+        width: 25%;
+        float: left;
+        padding: 0 15px;
+        display: none;
+    }
+
+    .noticeBox {
+        width: 100%;
+    }
+
+    .noticePage .topImg {
+        background: url(../images/coustomerTop.jpg) no-repeat;
+        background-size: cover;
+        height: 100px;
+    }
+
+    .noticePage {
+        padding: 130px 0px;
+        
+    }
+
+    .noticePage .numlist {
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .noticePage .numlist span {
+        background: #ddd;
+        padding: 5px 8px;
+        display: inline-block;
+    }
+    .noticePage .numlist a {
+        display: inline-block;
+        padding: 5px 8px;
+        border: 1px solid #ddd;
+    }
+
+
 }
