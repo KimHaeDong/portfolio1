@@ -179,6 +179,14 @@
 
 
 @media only screen and (max-width:767px) {
+
+    #introWrap {
+        background: url(../images/comIntTop.jpg) no-repeat;
+        background-size: cover;
+        height: 100px;
+    }
+
+
     .comInt {
         width: 25%;
         float: left;
