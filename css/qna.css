@@ -145,6 +145,9 @@ input {
 
 
 @media only screen and (max-width:767px) {
+    .qnaPage {
+        padding: 113px 0px;
+    }
 
     .comInt {
         width: 25%;

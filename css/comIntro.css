@@ -180,6 +180,10 @@
 
 @media only screen and (max-width:767px) {
 
+    #intContainer {
+        margin-top: 113px;
+    }
+
     #introWrap {
         background: url(../images/comIntTop.jpg) no-repeat;
         background-size: cover;

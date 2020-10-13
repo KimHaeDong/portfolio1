@@ -63,26 +63,32 @@
 
     #footer { text-align:center; font-size: 10px; }
 
-
 }
 
 
 @media only screen and (max-width:767px) {
 
+    #header {position: fixed; width:100%; 
+        top:0; left:0; z-index:999999;
+         background:#fff;
+         box-shadow: 0px 1px 10px #999;
+        }
+
+
     .h1Nav {
         position: relative;
-        height: 90px;
+        height: 73px;
     }
 
 
     .h1Nav .nav {
-        position: absolute;
-        top: 100%;
+        display: none;
+        position: fixed;
+        top: 89px; bottom: 0; overflow-y: auto;
         right: 0%;
         transform: translateY(0%);
         text-align: center;
         margin-top: 25px;
-        /* display: none; */
         background: #fff;
     }
 
@@ -93,7 +99,7 @@
 
     .h1Nav .nav .depth1>li>a {
         display: block;
-        padding: 30px;
+        padding: 20px;
     }
 
     .nav .depth1 .depth2 { position: static; top: 100%; left: 0; width: 100%; 

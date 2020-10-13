@@ -61,6 +61,6 @@ width: 15px; font-weight: bold; font-size: 17px; color: #f00;}
     .join_form #addr1 ~ span { display: none;}
     .join_form .tit_lbl { display: block; width: 100%; line-height: 45px; font-weight: bold; 
         font-size: 17px; letter-spacing: -2px; padding-left: 20px;}
-    .join_form .info_content { display: block; width: 100%; vertical-align: top;}
+    .join_form .info_content { display: block; width: 100%; }
     
 }
