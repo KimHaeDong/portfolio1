@@ -39,30 +39,59 @@ $(window).on('resize', function(){
 })
 
 
-    // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하기
-  $(".depth1 > li").on('click', function(){
+    // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴가 있으면 2단계 메뉴만 열고, 페이지 이동은 안함
+    // 2단계 메뉴가 없으면 페이지 이동한 후 햄버거 버튼만 보이게 하기
+  $(".depth1 > li > a").on('click', function(e){
+    e.preventDefault()
+    var url = $(this).attr('href')
       if ( $('html').hasClass('mobile') ) {
-        $(this).toggleClass('on')
-        $(this).find('.depth2').stop().slideToggle(300)
-        $(this).siblings().each(function(){
-            if (  $(this).css('display') === 'block' ) {
+        if ( $(this).next().is('.depth2') ) {
+          $(this).parent().toggleClass('on')  
+          $(this).parent().find('.depth2').stop().slideToggle(300)
+          $(this).parent().siblings().each(function(){
+            if (  $(this).find('.depth2').css('display') === 'block' ) {
               $(this).find('.depth2').slideUp(300)
               $(this).removeClass('on')
             }
-        })
+          })
+        } else if ( !$(this).next().is('.depth2') ) { 
+          $('#kimContainer').remove()
+          $('#kimBox').load(url)
+          $('.open_nav').show()
+          $('.h1Nav .nav, .depth2, .close_nav').hide()
+          $('.depth1 > li').removeClass("on");
+        }
+      } else if ( $('html').hasClass('pc') ) {
+          $('#kimContainer').remove()
+          $('#kimBox').load(url)
+          $('.depth2').hide()
       }
+  })
+
+  // 2단계 메뉴 클릭하면 화면에 상관없이 무조건 페이지 이동(로드)함
+  $('.depth2 > li a').on('click', function(e){
+    e.preventDefault()
+    var url = $(this).attr('href')
+    $('#kimContainer').remove()
+    $('#kimBox').load(url)
+    $('.depth2').hide()
+    if ( $('html').hasClass('mobile')) {
+        $('.open_nav').show()
+        $('.h1Nav .nav, .close_nav').hide()
+        $('.depth1 > li').removeClass("on");
+    }
   })
 
   // pc화면에서 1단계메뉴에 호버했을때 2단계메뉴 보이게 하기
   $('.depth1 > li').hover(
     function(){
       if ( $('html').hasClass('pc') ) {
-        $(this).find('.depth2').stop().slideDown(300)
+        $(this).find('.depth2').stop().slideDown(300);
       }
     },
     function(){
       if ( $('html').hasClass('pc') ) {
-        $(this).find('.depth2').stop().slideUp(300)
+        $(this).find('.depth2').stop().slideUp(300);
       }
     }
   )
@@ -92,12 +121,7 @@ $(window).on('resize', function(){
         $('#kimBox').load(url)
     })
 
-    $('.nav .depth1 li a').on('click', function(e){
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#kimContainer').remove()
-        $('#kimBox').load(url)
-    })
+    
 
 
     
@@ -139,4 +163,7 @@ $(window).on('resize', function(){
        $('.depth2').hide()
        $('.h1Nav .nav .depth1 > li').removeClass('on')
     })
+
+
+
 })(jQuery)
