@@ -164,6 +164,10 @@ $(window).on('resize', function(){
        $('.h1Nav .nav .depth1 > li').removeClass('on')
     })
 
-
+    $('.goTop').on('click', function(){
+      $('html, body').animate({
+        scrollTop:0
+      }, 500)
+    })
 
 })(jQuery)
